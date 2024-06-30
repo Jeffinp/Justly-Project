@@ -41,12 +41,12 @@ header {
     height: auto;
 }
 
-.logo-texto {
+.logo-text {
     color: #fff;
     font-size: 2rem;
 }
 
-.logo-texto:hover {
+.logo-text:hover {
     color: #cdda6d;
 }
 
@@ -367,6 +367,7 @@ li:hover {
     margin: 0;
     font-size: 3.5rem;
     color: #c8b050;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 .our-services-content {
@@ -374,7 +375,7 @@ li:hover {
     height: 50%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 120;
+    padding: 0 120px;
     margin-top: 30px;
 }
 
@@ -398,7 +399,7 @@ li:hover {
 .our-services-text {
     width: 85%;
     height: 100%;
-    padding: 20px 40px 0 10;
+    padding: 20px 40px 0 10px;
 }
 
 #services-icon {
