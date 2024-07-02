@@ -3,332 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justly</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>Justly - Law Firm</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5e18f82f31.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!-- Cabeçalho -->
-    <header>
-        <a href="./Index.html" class="logo">
-            <img class="Logo-img" src="./assets/logo.png" alt="Logo da Justly">
-            <span class="logo-text">Justly</span>
-        </a>
-
-        <nav>
-            <ul>
-                <li><a href="./Index.html">Home</a></li>
-                <li>Pages</li>
-                <li>Attorneys</li>
-                <li>Practice Areas</li>
-                <li>Contact Us</li>
-                <li><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></li>
-            </ul>
-        </nav>
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/logo.png" alt="Logo da Justly" class="logo-img">
+                <span class="logo-text">Justly</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#pages">Pages</a></li>
+                    <li><a href="#attorneys" id="attorneys">Attorneys</a></li>
+                    <li><a href="#practice-areas">Practice Areas</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass search-icon" id="lupa"></i></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars menu-icon" id="barra"></i>
+        </div>
     </header>
 
-    <!-- Modal -->
-    <div class="modal"></div>
-
-    <!-- Container principal -->
     <main>
-
-        <!-- Seção de destaque -->
-        <section class="home-container">
-            <div class="presentation-container">
-                <h3>A better Legal System</h3>
-                <h1>Welcome to <span>Justly Best</span> Lawyer Firm</h1>
-                <p>
-                    We are the best law firm in the family & business industry. With more than 15 years of experience in this area, you can expect better services from us.
-                </p>
-                <button>Read more</button>
-            </div>
-        </section>
-
-        <!-- Seção de destaques -->
-        <section class="destaks-container">
-            <div class="destaks-content">
-                <div class="content" id="square-1">
-                    <i class="fa-regular fa-message"></i>
-                    <span class="destaks-span">Free Consultation</span>
-                    <div class="divider"></div>
-                    <p class="destaks-paragraph">Our lawyers will give you legal advice.</p>
-                </div>
-
-                <div class="content" id="square-2">
-                    <i class="fa-sharp fa-solid fa-gavel fa-flip-horizontal" id="gavel-icon"></i>
-                    <span class="destaks-span" id="destaks-span-gold">Personal Lawyer</span>
-                    <div class="divider" id="divider-white"></div>
-                    <p class="destaks-paragraph">Qualified attorney that you can trust.</p>
-                </div>
-
-                <div class="content" id="square-3">
-                    <i class="fa-regular fa-paste"></i>
-                    <span class="destaks-span">Expert Advice</span>
-                    <div class="divider"></div>
-                    <p class="destaks-paragraph">Lawyer helps you to make the best decision.</p>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h3>A better Legal System</h3>
+                    <h1>Welcome to <span>Justly Best</span> Lawyer Firm</h1>
+                    <p>We are the best law firm in the family & business industry. With more than 15 years of experience in this area, you can expect better services from us.</p>
+                    <a href="#about" class="btn btn-primary">Read more</a>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de boas-vindas -->
-        <section class="welcome-container">
-            <div class="signature-container">
-                <div class="signature-content">
-                    <div class="signature-text">
-                        <div class="signature-title">
-                            <h5>WELCOME TO</h5>
-                            <h1>Justly Law Firm</h1>
-                        </div>
-                        <span>
-                            By cooperating with over many lawyers across the world, our law firm is a leader in providing quality legal services.
-                        </span>
-                        <p>
-                            Maecenas auctor blandit consectetur. Etiam et tellus vulputate, interdum velit eget, gravida metus. Donec porttitor dolor et arcu semper, eget pulvinar mauris volutpat. Proin condimentum mi justo, dictum placerat quam vulputate at. Integer pulvinar odio nec sem eleifend, tincidunt tincidunt erat mollis. Pellentesque cursus ligula libero, sed porta ipsum.
+        <section class="features">
+            <div class="container">
+                <div class="features-content">
+                    <div class="content" id="square-1">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="features-span">Free Consultation</span>
+                        <div class="divider"></div>
+                        <p class="features-paragraph">
+                            Our lawyers will give
+                            you legal advice
                         </p>
-                        <div class="signature-button-container">
-                            <button>Read More</button>
-                            <img class="signature-img" src="./assets/signature.png" alt="signature">
-                        </div>
                     </div>
-                </div>
-                <div class="attorney-container">
-                    <img class="attorney-img" src="./assets/attorney.png" alt="attorney">
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção de serviços -->
-        <section class="our-services-container">
-            <div class="our-services-title">
-                <h2>OUR SERVICES</h2>
-                <h1>Practice Areas</h1>
-                <div class="divider" id="our-services-divider"></div>
-            </div>
-
-            <div class="our-services-content">
-                <!-- Insurance -->
-                <div class="our-services-square" id="insurance">
-                    <div class="our-services-icon" id="services-icon">
-                        <i class="fa-solid fa-paste"></i>
+                    <div class="content" id="square-2">
+                        <i class="fa-solid fa-gavel fa-rotate-270" id="gavel-icon"></i>
+                        <span class="features-span" id="features-span-gold">Personal Lawyer</span>
+                        <div class="divider" id="divider-white"></div>
+                        <p class="features-paragraph">
+                            Qualified attorney that
+                            you can trust
+                        </p>
                     </div>
-                    <div class="our-services-text">
-                        <h3 class="services-title">Insurance</h3>
-                        <span class="services-description">
-                            We regularly provide advice in insurance and crash assistance.
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Bank & Financial -->
-                <div class="our-services-square" id="Bank-Financial">
-                    <div class="our-services-icon">
-                        <i class="fa-solid fa-building-columns" id="services-icon"></i>
-                    </div>
-                    <div class="our-services-text">
-                        <h3 class="services-title">Bank & Financial</h3>
-                        <span class="services-description">
-                            Our corruption experts will prevent bank and finance fraud.
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Civil Litigation -->
-                <div class="our-services-square" id="Civil-Litigation">
-                    <div class="our-services-icon">
-                        <i class="fa-solid fa-gavel" id="services-icon"></i>
-                    </div>
-                    <div class="our-services-text">
-                        <h3 class="services-title">Civil Litigation</h3>
-                        <span class="services-description">
-                            Our trusted team will help you with pre-trial procedures.
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Family Law -->
-                <div class="our-services-square" id="Family-Law">
-                    <div class="our-services-icon">
-                        <i class="fa-solid fa-book-bookmark" id="services-icon"></i>
-                    </div>
-                    <div class="our-services-text">
-                        <h3 class="services-title">Family Law</h3>
-                        <span class="services-description">
-                            We have extensive experience in family law and offer.
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Business Law -->
-                <div class="our-services-square" id="Business-Law">
-                    <div class="our-services-icon">
-                        <i class="fa-solid fa-scale-balanced" id="services-icon"></i>
-                    </div>
-                    <div class="our-services-text">
-                        <h3 class="services-title">Business Law</h3>
-                        <span class="services-description">
-                            Our experienced lawyers offer great advice in your business.
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Criminal Law -->
-                <div class="our-services-square" id="Criminal-Law">
-                    <div class="our-services-icon">
-                        <i class="fa-solid fa-handcuffs" id="services-icon"></i>
-                    </div>
-                    <div class="our-services-text">
-                        <h3 class="services-title">Criminal Law</h3>
-                        <span class="services-description">
-                            We provide legal assistance on matters of criminal law.
-                        </span>
+                    <div class="content" id="square-3">
+                        <i class="fa-regular fa-paste"></i>
+                        <span class="features-span">Expert Advice</span>
+                        <div class="divider"></div>
+                        <p class="features-paragraph">
+                            Lawyer helps you to make
+                            the best decision
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de depoimentos -->
-        <section class="testimonials-container">
-            <div class="testimonials-title">
-                <h2>TESTIMONIALS</h2>
-                <h1>What Clients Say</h1>
-                <div class="divider" id="our-services-divider"></div>
-            </div>
-
-            <div class="testimonials-cards-container">
-                <div class="cards" id="card-1">
-                    <div class="testimonial-img" id="testimonial-1"></div>
-                    <i class="fa-solid fa-quote-left" id="testimony-icon"></i>
-                    <p class="testimony">
-                        Festibulum sit amet volutpat libero. Quisque sit amet feugiat nulla. Sed imperdiet hendrerit est nec euismod.
-                    </p>
-                    <h2 class="testimonial-name">Donald Gray</h2>
-                    <span class="testimonial-profession">Businessman</span>
-                </div>
-
-                <div class="cards" id="card-2">
-                    <div class="testimonial-img" id="testimonial-2"></div>
-                    <i class="fa-solid fa-quote-left" id="testimony-icon"></i>
-                    <p class="testimony">
-                        Festibulum sit amet volutpat libero. Quisque sit amet feugiat nulla. Sed imperdiet hendrerit est nec euismod.
-                    </p>
-                    <h2 class="testimonial-name">Joseph Brooks</h2>
-                    <span class="testimonial-profession">Teacher</span>
-                </div>
-
-                <div class="cards" id="card-3">
-                    <div class="testimonial-img" id="testimonial-3"></div>
-                    <i class="fa-solid fa-quote-left" id="testimony-icon"></i>
-                    <p class="testimony">
-                        Festibulum sit amet volutpat libero. Quisque sit amet feugiat nulla. Sed imperdiet hendrerit est nec euismod.
-                    </p>
-                    <h2 class="testimonial-name">Shanna Hicks</h2>
-                    <span class="testimonial-profession">Mother</span>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h5>WELCOME TO</h5>
+                        <h2>Justly Law Firm</h2>
+                        <p class="highlight">By cooperating with over many lawyers across the world, our law firm is a leader in providing quality legal services.</p>
+                        <p>Maecenas auctor blandit consectetur. Etiam et tellus vulputate, interdum velit eget, gravida metus. Donec porttitor dolor et arcu semper, eget pulvinar mauris volutpat. Proin condimentum mi justo, dictum placerat quam vulputate at. Integer pulvinar odio nec sem eleifend, tincidunt tincidunt erat mollis. Pellentesque cursus ligula libero, sed porta ipsum.</p>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-secondary">Read More</a>
+                            <img src="./assets/signature.png" alt="Signature" class="signature">
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="./assets/attorney.png" alt="Attorney" class="attorney-img">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de formulário -->
-        <section class="form-container">
-            <div class="form-img"></div>
-            <div class="form-content">
-                <div class="form-title">
-                    <h2>REQUEST A QUOTE</h2>
-                    <h1>Free Consultation</h1>
-                    <div class="divider" id="form-divider"></div>
+        <section id="practice-areas" class="practice-areas">
+            <div class="container">
+                <div class="practice-areas-title">
+                    <h2>OUR SERVICES</h2>
+                    <h1>Practice Areas</h1>
+                    <div class="divider" id="practice-areas-divider"></div>
                 </div>
-                <p class="form-description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia, illum tempora consectetur incidunt officiis in, ipsum vel, ullam assumenda quidem enim?
-                </p>
-                <div class="form-inputs">
-                    <div class="first-inputs">
-                        <div class="input-container">
-                            <input type="text" name="user-name" id="user-name-input" class="user-input" placeholder="Name" autocomplete="name">
+        
+                <div class="practice-areas-content">
+                    <div class="practice-areas-square" id="insurance">
+                        <div class="practice-areas-icon">
+                            <i class="fa-regular fa-paste" id="service-icon"></i>
                         </div>
-                        <div class="input-container">
-                            <input type="email" name="user-email" id="user-email-input" class="user-input" placeholder="Email" autocomplete="on">
+                        <div class="practice-areas-text">
+                            <h3 class="service-title">Insurance</h3>
+                            <span class="service-description">
+                                We regularly provide advice in insurance and crash assistance.
+                            </span>
                         </div>
                     </div>
-                    <div class="input-container" id="user-phone-input">
-                        <input type="tel" name="user-phone" class="user-input" placeholder="Phone" autocomplete="tel">
+                    <div class="practice-areas-square" id="bank-financial">
+                        <div class="practice-areas-icon">
+                            <i class="fa-solid fa-landmark" id="service-icon"></i>
+                        </div>
+                        <div class="practice-areas-text">
+                            <h3 class="service-title">Bank & Financial</h3>
+                            <span class="service-description">
+                                Our corruption experts will prevent bank and finance fraud.
+                            </span>
+                        </div>
                     </div>
-                    <div class="input-container" id="user-message-input">
-                        <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="Message" maxlength="350"></textarea>
+                    <div class="practice-areas-square" id="civil-litigation">
+                        <div class="practice-areas-icon">
+                            <i class="fa-sharp fa-solid fa-gavel" id="service-icon"></i>
+                        </div>
+                        <div class="practice-areas-text">
+                            <h3 class="service-title">Civil Litigation</h3>
+                            <span class="service-description">
+                                Our trusted team will help you with pre-trial procedures.
+                            </span>
+                        </div>
                     </div>
-                    <button class="submit-button">Submit</button>
+                    <div class="practice-areas-square" id="family-law">
+                        <div class="practice-areas-icon">
+                            <i class="fa-solid fa-book-bookmark" id="service-icon"></i>
+                        </div>
+                        <div class="practice-areas-text">
+                            <h3 class="service-title">Family Law</h3>
+                            <span class="service-description">
+                                We have extensive experience in family law and offer.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="practice-areas-square" id="business-law">
+                        <div class="practice-areas-icon">
+                            <i class="fa-solid fa-scale-balanced" id="service-icon"></i>
+                        </div>
+                        <div class="practice-areas-text">
+                            <h3 class="service-title">Business Law</h3>
+                            <span class="service-description">
+                                Our experienced lawyers offer great advice in your business.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="practice-areas-square" id="criminal-law">
+                        <div class="practice-areas-icon">
+                            <i class="fa-solid fa-handcuffs" id="service-icon"></i>
+                        </div>
+                        <div class="practice-areas-text">
+                            <h3 class="service-title">Criminal Law</h3>
+                            <span class="service-description">
+                                We provide legal assistance on matters of criminal law.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="testimonial-title">
+                    <h2 class="section-title">TESTIMONIALS</h2>
+                    <h1 class="section-subtitle">What Clients Say</h1>
+                    <div class="divider-testimonial" id="our-services-divider"></div>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <div class="testimonial-image" style="background-image: url('./assets/testimonials01.jpg');"></div>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Festibulum sit amet volutpat libero. Quisque sit amet feugiat nulla. Sed imperdiet hendrerit est nec euismod.</p>
+                        <h4>Donald Gray</h4>
+                        <span>Businessman</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-image" style="background-image: url('./assets/testimonials02.jpg');"></div>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Festibulum sit amet volutpat libero. Quisque sit amet feugiat nulla. Sed imperdiet hendrerit est nec euismod.</p>
+                        <h4>Joseph Brooks</h4>
+                        <span>Teacher</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-image" style="background-image: url('./assets/testimonials03.jpg');"></div>
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Festibulum sit amet volutpat libero. Quisque sit amet feugiat nulla. Sed imperdiet hendrerit est nec euismod.</p>
+                        <h4>Shanna Hicks</h4>
+                        <span>Mother</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-image" style="background-image: url('./assets/banner1.jpg');"></div>
+                    <div class="contact-form">
+                        <h2 class="section-subtitle">REQUEST A QUOTE</h2>
+                        <h1 class="section-title">Free Consultation</h1>
+                        <div class="divider" id="form-divider"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia, illum tempora consectetur incidunt officiis in, ipsum vel, ullam assumenda quidem enim?</p>
+                        <form>
+                            <div class="form-row">
+                                <input type="text" name="name" placeholder="Name" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <input type="tel" name="phone" placeholder="Phone" required>
+                            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-   <footer>
-    <div class="footer-content">
-
-        <div class="about-text">
-            <h2>ABOUT US</h2>
-            <p>
-                Maecenas auctor blandit consectetur. Etiam et tellus vulputate, interdum velit eget, gravida metus. Donec porttitor dolor et arcu semper, eget pulvinar mauris volutpat.
-            </p>
-            <div class="social-media">
-                <i class="fa-brands fa-facebook-f" id="facebook-icon"></i>
-                <i class="fa-brands fa-telegram" id="telegram-icon"></i>
-                <i class="fa-brands fa-linkedin-in" id="linkedin-icon"></i>
-                <i class="fa-brands fa-instagram" id="instagram-icon"></i>
-                <i class="fa-brands fa-youtube" id="youtube-icon"></i>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>ABOUT US</h4>
+                    <p>Maecenas auctor blandit consectetur. Etiam et tellus vulputate, interdum velit eget, gravida metus. Donec porttitor dolor et arcu semper, eget pulvinar mauris volutpat.</p>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f" id="facebook-icon"></i>
+                        <i class="fa-brands fa-telegram" id="telegram-icon"></i>
+                        <i class="fa-brands fa-linkedin-in" id="linkedin-icon"></i>
+                        <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+                        <i class="fa-brands fa-youtube" id="youtube-icon"></i>        
+                    </div>
+                </div>
+                <div class="footer-posts">
+                    <h4>THEME POSTS</h4>
+                    <div class="post-item">
+                        <img src="./assets/post-1.jpg" alt="Post 1">
+                        <div>
+                            <p>Judicial Review of New Laws in Employment Law</p>
+                            <span><i class="fa-regular fa-clock"></i> May 17, 2023</span>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/post-2.jpg" alt="Post 2">
+                        <div>
+                            <p>Speak Directly With An Insurer in Case of Car Accidents</p>
+                            <span><i class="fa-regular fa-clock"></i> May 17, 2023</span>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="./assets/post-3.jpg" alt="Post 3">
+                        <div>
+                            <p>Listen to your Lawyers – They Will give You Advices</p>
+                            <span><i class="fa-regular fa-clock"></i> May 17, 2023</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="theme-post">
-            <h2>THEME POSTS</h2>
-
-            <div class="posts" id="post-1">
-                <img src="./assets/post-1.jpg" alt="post-img" class="post-img">
-                <div class="post-content">
-                    <p>
-                        Judicial Review of New Laws in Employment Law
-                    </p>
-                    <div class="post-date">
-                        <i class="fa-regular fa-clock" id="clock-icon"></i> <span>May 17, 2023</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="posts" id="post-2">
-                <img src="./assets/post-2.jpg" alt="post-img" class="post-img">
-                <div class="post-content">
-                    <p>
-                        Speak Directly With An Insurer in Case of Car Accidents
-                    </p>
-                    <div class="post-date">
-                        <i class="fa-regular fa-clock" id="clock-icon"></i> <span>May 17, 2023</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="posts" id="post-3">
-                <img src="./assets/post-3.jpg" alt="post-img" class="post-img">
-                <div class="post-content">
-                    <p>
-                        Listen to your Lawyers – They Will give You Advices
-                    </p>
-                    <div class="post-date">
-                        <i class="fa-regular fa-clock" id="clock-icon"></i> <span>May 17, 2023</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</footer>
+    </footer>
     <div class="copyright">
-        <span>&copy; JUSTLY 2023</span>
+        <div class="container">
+            <span>&copy; JUSTLY 2023</span>
+        </div>
     </div>
 
-
-
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+            
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
