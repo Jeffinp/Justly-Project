@@ -435,6 +435,7 @@ p {
     margin: 0;
     font-size: 3.5rem;
     color: var(--color-secondary);
+    text-align: center;
 }
 
 .testimonial-grid {
@@ -579,22 +580,27 @@ input::placeholder, textarea::placeholder {
 }
 
 #facebook-icon:hover {
+    transition: 0.2s;
     color: #007bff;
 }
 
 #telegram-icon:hover {
+    transition: 0.2s;
     color: #17a2b8;
 }
 
 #linkedin-icon:hover {
+    transition: 0.2s;
     color: #007bff;
 }
 
 #instagram-icon:hover {
+    transition: 0.2s;
     color: #e83e8c;
 }
 
 #youtube-icon:hover {
+    transition: 0.2s;
     color: #dc3545;
 }
 
