@@ -1,6 +1,6 @@
 # Justly Project
 
-![Logo](https://github.com/Jeffinp/Justly-Project/blob/main/src/media/logo.png)
+![Logo](https://github.com/Jeffinp/Justly-Project/blob/main/assets/logo.png)
 
 O Justly Project é um site que criei para testar e aprimorar minhas habilidades em design e CSS. Este projeto é uma demonstração do meu progresso e capacidade de criar interfaces de usuário atraentes e funcionais, seguindo as melhores práticas de desenvolvimento web.
 
