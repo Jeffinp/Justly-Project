@@ -16,7 +16,6 @@ O Justly Project é um site que criei para testar e aprimorar minhas habilidades
 
 - HTML5
 - CSS3
-- JavaScript
 
 ## Instalação e Uso
 
